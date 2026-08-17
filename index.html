@@ -3,31 +3,100 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Racha de Conta — Calculadoras grátis para dividir conta, gorjeta, delivery e churrasco</title>
-<meta name="description" content="Hub oficial das calculadoras grátis para rachar contas: bar/restaurante, gorjeta, delivery (iFood/Ifood) e churrasco/vaquinha. Sem cadastro, no celular." />
+<title>Racha de Conta — Como dividir conta, gorjeta, delivery e churrasco (guia + calculadoras grátis)</title>
+<meta name="description" content="Como dividir conta no restaurante, calcular gorjeta por pessoa, rachar pedido de delivery (iFood/Ifood) e fazer vaquinha de churrasco. Guia prático com calculadoras grátis, 100% no navegador." />
 <link rel="canonical" href="https://laboratorio-buzato.github.io/" />
 <style>
   :root { --bg:#0f172a; --card:#1e293b; --acc:#22c55e; --txt:#e2e8f0; --mut:#94a3b8; }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); line-height:1.5; }
-  header { padding:2.5rem 1.25rem 1.5rem; text-align:center; }
-  h1 { font-size:1.7rem; margin:0 0 .5rem; }
-  header p { color:var(--mut); max-width:620px; margin:0 auto; }
-  main { max-width:860px; margin:0 auto; padding:1rem; display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); line-height:1.65; }
+  header { padding:2.5rem 1.25rem 1rem; text-align:center; }
+  h1 { font-size:1.8rem; margin:0 0 .5rem; }
+  header p { color:var(--mut); max-width:640px; margin:0 auto; }
+  .wrap { max-width:860px; margin:0 auto; padding:1rem 1.25rem 2rem; }
+  article h2 { color:#fff; font-size:1.3rem; margin:2rem 0 .6rem; border-left:4px solid var(--acc); padding-left:.6rem; }
+  article h3 { color:#cbd5e1; font-size:1.05rem; margin:1.2rem 0 .4rem; }
+  article p, article li { color:var(--txt); }
+  article a { color:var(--acc); }
+  article ul { padding-left:1.2rem; }
+  .cards { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:2rem; }
   a.card { display:block; background:var(--card); border:1px solid #334155; border-radius:14px; padding:1.25rem; text-decoration:none; color:inherit; transition:transform .12s,border-color .12s; }
   a.card:hover { transform:translateY(-3px); border-color:var(--acc); }
-  a.card h2 { margin:.1rem 0 .4rem; font-size:1.15rem; color:#fff; }
+  a.card h2 { margin:.1rem 0 .4rem; font-size:1.15rem; color:#fff; border:0; padding:0; }
   a.card p { margin:0; color:var(--mut); font-size:.92rem; }
   .tag { display:inline-block; font-size:.72rem; color:var(--acc); border:1px solid var(--acc); border-radius:999px; padding:.1rem .5rem; margin-bottom:.5rem; }
+  .faq { background:var(--card); border:1px solid #334155; border-radius:14px; padding:1.25rem 1.4rem; margin-top:1rem; }
+  .faq h3 { margin-top:0; }
   footer { text-align:center; color:var(--mut); font-size:.82rem; padding:2rem 1rem 3rem; }
 </style>
 </head>
 <body>
 <header>
   <h1>Racha de Conta — Calculadoras grátis</h1>
-  <p>Divida contas com amigos, família e colegas sem planilha e sem cadastro. Escolha a calculadora abaixo e use direto no celular.</p>
+  <p>Divida contas com amigos, família e colegas sem planilha e sem cadastro. Abaixo, o guia prático e as calculadoras para usar direto no celular.</p>
 </header>
-<main>
+
+<div class="wrap">
+<article>
+  <h2>Como dividir conta no restaurante ou bar</h2>
+  <p>Existem duas formas corretas de rachar uma conta, e a escolha depende de como vocês consumiram:</p>
+  <ul>
+    <li><strong>Divisão igual (racha liso):</strong> o total é dividido pelo número de pessoas. Funciona quando todos comeram e beberam mais ou menos a mesma coisa.</li>
+    <li><strong>Divisão proporcional:</strong> cada um paga conforme o que consumiu. Use quando um pediu picanha e o outro só água — é o mais justo, mas exige anotar os valores.</li>
+  </ul>
+  <p>Não esqueça a <strong>gorjeta</strong>: em muitos lugares ela já vem incluída na conta (costuma aparecer como "taxa de serviço" de 10%). Se não estiver incluída, você pode somá-la antes de dividir. Faça isso na <a href="https://racha-conta-app.vercel.app/">calculadora de racha de conta</a>, que já separa valor, gorjeta e divisão por pessoa.</p>
+
+  <h2>Como calcular gorjeta por pessoa</h2>
+  <p>A regra geral no Brasil gira em torno de <strong>10% do valor da conta</strong>. Para saber quanto cada um deve:</p>
+  <ul>
+    <li>Calcule 10% do total (conta × 0,10).</li>
+    <li>Some essa gorjeta ao total.</li>
+    <li>Divida o novo total pelo número de pessoas.</li>
+  </ul>
+  <p>Em viagens internacionais a lógica é a mesma, só muda o percentual (nos EUA, costuma-se deixar 15% a 20%). Use a <a href="https://racha-conta-app.vercel.app/gorjeta.html">calculadora de gorjeta</a> para não quebrar a cabeça com a conta de cabeça.</p>
+
+  <h2>Como rachar conta de delivery (iFood / Ifood)</h2>
+  <p>Pedidos de delivery complicam porque envolvem <strong>taxa de entrega e taxa do app</strong>, que não pertencem a nenhum item. O jeito justo:</p>
+  <ul>
+    <li>Some o valor dos itens de cada pessoa.</li>
+    <li>Divida as taxas (entrega + conveniência) igualmente, ou proporcionalmente ao valor pedido por cada um.</li>
+    <li>Some o frete repartido ao valor individual de cada um.</li>
+  </ul>
+  <p>A <a href="https://racha-conta-app.vercel.app/delivery.html">calculadora de racha de delivery</a> faz esse rateio automaticamente, inclusive quando alguém não quer pagar taxa ou pediu de outra loja.</p>
+
+  <h2>Vaquinha de churrasco: quanto de carne por pessoa</h2>
+  <p>Para um churrasco comum, a referência é de <strong>300 g a 500 g de carne por pessoa</strong> (500 g se a carne for o prato principal e não houver outro acompanhamento reforçado). Depois de definir a quantidade, a vaquinha é simples:</p>
+  <ul>
+    <li>Some carne, bebidas, gelo e carvão.</li>
+    <li>Divida o total entre os participantes, ou rateie cada item pelo quem vai consumir.</li>
+    <li>Se alguém levar a geladeira ou o espaço, pode ser "descontado" do valor.</li>
+  </ul>
+  <p>Use a <a href="https://racha-conta-app.vercel.app/churrasco.html">vaquinha de churrasco</a> para ratear tudo e evitar aquele constrangimento de "quanto eu te devo?".</p>
+
+  <h2>Erros comuns ao rachar conta</h2>
+  <ul>
+    <li>Esquecer a gorjeta ou a taxa de serviço no total.</li>
+    <li>Dividir tudo igual quando o consumo foi muito desigual.</li>
+    <li>Não incluir a taxa de entrega do delivery no rateio.</li>
+    <li>Arredondar mal e sobrar ou faltar centavos no fechamento.</li>
+  </ul>
+
+  <h2>Perguntas frequentes</h2>
+  <div class="faq">
+    <h3>Como dividir conta com amigo que não consumiu nada?</h3>
+    <p>Se a pessoa estava no rolê mas não comeu, combine antes se ela entra na conta ou não. Se entrar, divida o total igual; se não, tire o consumo dela do rateio proporcional.</p>
+    <h3>Como rachar conta de viagem entre amigos?</h3>
+    <p>Anote os gastos compartilhados (combustível, pedágio, Airbnb) e use divisão proporcional ou igual conforme o combinado. Apps de divisão evitam confusão no fim da trip.</p>
+    <h3>Como calcular gorjeta no cartão ou Pix?</h3>
+    <p>A forma de pagamento não muda o cálculo: gere o total (conta + gorjeta) e divida. O Pix só facilita transferir a cota de cada um depois.</p>
+    <h3>Vale a pena ratear por Pix ou dinheiro?</h3>
+    <p>Os dois funcionam. O Pix evita troco quebrado e registra o valor transferido; dinheiro é mais rápido na hora, mas exige ter troco.</p>
+    <h3>As calculadoras acima coletam meus dados?</h3>
+    <p>Não. Todo o cálculo acontece no seu navegador, sem login, sem cadastro e sem envio de valores pessoais para nenhum servidor.</p>
+  </div>
+</article>
+
+<section class="cards" aria-label="Calculadoras">
   <a class="card" href="https://racha-conta-app.vercel.app/">
     <span class="tag">Bar · Restaurante</span>
     <h2>Racha de Conta</h2>
@@ -48,7 +117,9 @@
     <h2>Vaquinha de Churrasco</h2>
     <p>Faça a vaquinha do churrasco: rateie carne, bebidas e gelo, ou divida os custos totais.</p>
   </a>
-</main>
+</section>
+</div>
+
 <footer>
   Ferramentas gratuitas, 100% no navegador. Conteúdo de utilidade pública — sem coleta de dados pessoais.
 </footer>
